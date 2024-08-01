@@ -1,0 +1,30 @@
+{
+  "name": "nodejs-backend",
+  "version": "1.0.0",
+  "description": "aulas de backend com node.js e Express",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "start": "node --watch src/server.js",
+    "dev": "node --watch src/server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/stephanievic/DW2.git"
+  },
+  "keywords": [
+    "api",
+    "node",
+    "express",
+    "zod"
+  ],
+  "author": "Stephanie Victoria",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/stephanievic/DW2/issues"
+  },
+  "homepage": "https://github.com/stephanievic/DW2#readme",
+  "dependencies": {
+    "express": "^4.19.2"
+  }
+}
