@@ -2,13 +2,14 @@
 import express from 'express'
 import userRouter from './routers/userRouter.js'
 import productRouter from './routers/productRouter.js'
+import { ENVIRONMENT, PORT, HOST } from './config.js';
 
 const app = express(); //objeto app contém todas as funções do express
-const port = 3000;
+
 
 app.use('/user', userRouter)
 app.use('/product', productRouter)
 
-app.listen(port, () => {
-    console.log(`Servidor rodando em http://localhost:${port}`);
+app.listen(PORT, () => {
+    console.log(`Servidor rodando em ambiente ${ENVIRONMENT} em ${ENVIRONMENT === 'production' ? HOST : HOST + ':' + PORT}`);
 });
