@@ -1,0 +1,14 @@
+{
+    "clientName": "Thunder Client",
+    "environmentName": "Env Local",
+    "environmentId": "3e85a0e6-7e7a-4bea-ab25-887e396e665e",
+    "dateExported": "2024-08-14T23:22:34.841Z",
+    "version": "1.2",
+    "variables": [
+        {
+            "name": "BASE_URL",
+            "value": "http://localhost:3000"
+        }
+    ],
+    "ref": "GnVks32gF99Uy5KTwaRpw1F7oqLHF3c0O_z7kyPzeLaY2TSQgfeFk4wlOi6WRMYN"
+}

@@ -1,21 +1,21 @@
-const getAll = () => {
-    return [
-        {
-            id: 1,
-            name: 'Stephanie',
-            email: "stephanievictoria.dossantos@gmail.com"
-        },
+import {PrismaClient} from '@prisma/client'
 
-        {
-            id: 2,
-            name: "Lucas",
-            email: "lucas@gmail.com"
+const prisma = new PrismaClient()
+
+export const getAll = async () => {
+    const users = await prisma.user.findMany({
+        select: {
+            idUser: true,
+            name: true,
+            email: true,
+            password: false
         }
-    ]
+    })
+
+    return users
 }
 
 const create = () => {
 
 }
 
-export default {getAll, create}
