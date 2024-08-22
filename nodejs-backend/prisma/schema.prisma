@@ -17,7 +17,7 @@ model user {
 
 model product {
   name       String  @db.VarChar(100)
-  idProduct  Int     @id @db.UnsignedInt
+  idProduct  Int     @id 
   quantidade Int
   descri__o  String? @map("descrição") @db.VarChar(256)
   preco      Decimal @db.Decimal(10, 2)
