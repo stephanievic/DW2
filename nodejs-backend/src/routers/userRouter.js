@@ -9,7 +9,7 @@ import deleteUser from '../controllers/user/deleteUser.js';
 const router = express.Router();
 
 //método get para "pegar" um dado (requisição)
-router.get('/', userByID);
+router.get('/:id', userByID);
 
 router.get('/list', userList);
 
@@ -17,12 +17,12 @@ router.get('/list', userList);
 router.post('/', createUser);
 
 //método put para alterar dados
-router.put('/', editUser);
+router.put('/edit/:id', editUser);
 
 //método patch para editar dados especificos/parciais
 router.patch('/', editName);
 
 //método delete para deletar dados
-router.delete('/', deleteUser);
+router.delete('/delete/:id', deleteUser);
 
 export default router;

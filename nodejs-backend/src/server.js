@@ -6,6 +6,13 @@ import { ENVIRONMENT, PORT, HOST } from './config.js';
 
 const app = express(); //objeto app contém todas as funções do express
 
+app.use(express.json())
+
+app.use('/', (req, res) => { 
+    res.json({
+        message: 'Welcome to API backend - DW2'
+    })
+})
 
 app.use('/user', userRouter)
 app.use('/product', productRouter)
