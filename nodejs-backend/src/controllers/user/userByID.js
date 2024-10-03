@@ -13,4 +13,4 @@ const userById = async (req, res) => {
         message: 'User not found.'
     })
 }
-export default userByID;
+export default userById;

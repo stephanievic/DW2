@@ -9,7 +9,7 @@ import deleteUser from '../controllers/user/deleteUser.js';
 const router = express.Router();
 
 //método get para "pegar" um dado (requisição)
-router.get('/:id', userByID);
+//router.get('/:id', userByID);
 
 router.get('/list', userList);
 
